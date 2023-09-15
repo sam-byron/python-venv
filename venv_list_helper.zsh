@@ -7,4 +7,4 @@ dir=$@
 venv_root="${dir%*/*}"
 venv_root="${venv_root%*/*}"
 venv_root="${venv_root%*/*}"
-echo $venv_root
+echo $venv_root","
