@@ -4,7 +4,7 @@
 #https://www.golinuxcloud.com/bash-split-string-into-array-linux/
 #https://linuxize.com/post/bash-increment-decrement-variable/
 
-out=$(find ~  -name "site-packages" -print0 | xargs -0 -n 1 ~/.oh-my-zsh/custom/venv/venv_list_helper.zsh)
+out=$(find ~/engineering  -name "site-packages" -print0 | xargs -0 -n 1 ~/.oh-my-zsh/custom/venv/venv_list_helper.zsh)
 all_venvs=(`echo $out | tr ',' ' '`)
 
 echo "Choose a python virtual environment to activate:"
